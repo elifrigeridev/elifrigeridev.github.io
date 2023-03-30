@@ -7,8 +7,8 @@
 
 .tema-claro {
   --corDeFundo: #5b49e8;
-  --corDeFundoLink: #fff;
-  --corDoTextoLink: #5b49e8;
+  --corDeFundoLink: #ee5e2a;
+  --corDoTextoLink: #fff;
   --filtroLampada: grayscale(0) opacity(1);
 }
 
