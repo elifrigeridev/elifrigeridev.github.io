@@ -1,0 +1,121 @@
+:root {
+  --corDeFundo: #222222;
+  --corDeFundoLink: #181818;
+  --corDoTextoLink: #fff;
+  --filtroLampada: grayscale(1) opacity(0.25);
+}
+
+.tema-claro {
+  --corDeFundo: #5b49e8;
+  --corDeFundoLink: #fff;
+  --corDoTextoLink: #5b49e8;
+  --filtroLampada: grayscale(0) opacity(1);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background: var(--corDeFundo);
+  -webkit-font-smoothing: antialiased;
+  transition: 0.3s;
+}
+
+.secao-principal {
+  max-width: 500px;
+  margin: 0 auto   ;
+}
+
+/* ----------------------------  TOPO  --------------------------------- */
+.topo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topo-lampada {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 100%;
+  border: none;
+  background: #fff;
+  height: 50px;
+  width: 50px;
+
+  filter: var(--filtroLampada);
+  cursor: pointer;
+}
+
+.topo-foto {
+  margin-top: 60px;
+  width: 100px;
+  border: 4px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 10px #000;
+}
+
+.topo-nome {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.topo-profissao {
+  margin-top: 4px;
+  color: #fff;
+}
+
+/* ----------------------------  LINKS  --------------------------------- */
+.links {
+  margin: 30px 30px 0px 30px;
+}
+
+.links-link {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px #000;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background: var(--corDeFundoLink);
+  color: var(--corDoTextoLink);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links-icon {
+  position: absolute;
+  left: 19px;
+  font-size: 22px;
+}
+
+.links-link:hover {
+  filter: brightness(0.75);
+}
+
+/* ----------------------------  RODAPÉ  --------------------------------- */
+.rodape {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.rodape-convite {
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.rodape-icon {
+  margin-top: 20px;
+  font-size: 30px;
+}
